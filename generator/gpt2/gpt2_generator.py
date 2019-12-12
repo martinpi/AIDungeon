@@ -2,10 +2,13 @@ import json
 import os
 import warnings
 
+import sys
+sys.path.append('/Users/pi/Projects/AIDungeon')
+
 import numpy as np
 import tensorflow as tf
-from generator.gpt2.src import encoder, model, sample
 from story.utils import *
+from generator.gpt2.src import encoder, model, sample
 
 warnings.filterwarnings("ignore")
 
@@ -20,7 +23,7 @@ class GPT2Generator:
         self.top_p = top_p
         self.censor = censor
 
-        self.model_name = "model_v5"
+        self.model_name = "romba2"
         self.model_dir = "generator/gpt2/models"
         self.checkpoint_path = os.path.join(self.model_dir, self.model_name)
 

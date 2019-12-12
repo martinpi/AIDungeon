@@ -1,8 +1,12 @@
+#coding: utf-8
 """Byte pair encoding utilities"""
 
 import json
 import os
-from functools import lru_cache
+try:
+	from functools import lru_cache
+except ImportError:
+	from backports.functools_lru_cache import lru_cache
 
 import regex as re
 
@@ -20,8 +24,8 @@ def bytes_to_unicode():
     """
     bs = (
         list(range(ord("!"), ord("~") + 1))
-        + list(range(ord("¡"), ord("¬") + 1))
-        + list(range(ord("®"), ord("ÿ") + 1))
+        + list(range(ord(u"¡"), ord("¬") + 1))
+        + list(range(ord(u"®"), ord(u"ÿ") + 1))
     )
     cs = bs[:]
     n = 0

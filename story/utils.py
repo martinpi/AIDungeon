@@ -2,6 +2,10 @@
 import re
 from difflib import SequenceMatcher
 
+#import sys
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
+
 import yaml
 from profanityfilter import ProfanityFilter
 
@@ -74,8 +78,10 @@ def player_won(text):
     return any(re.search(regexp, lower_text) for regexp in won_phrases)
 
 
+# doesn't really make sense for a romance game
 def remove_profanity(text):
-    return pf.censor(text)
+	return text
+    #return pf.censor(text)
 
 
 def cut_trailing_quotes(text):
