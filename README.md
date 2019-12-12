@@ -1,6 +1,6 @@
 # Not AI Dungeon (NAID)
 
-This is my personal clone of AI Dungeon with the perpose of getting it out of the dungeon and into more interesting realms of fantasy that are not as high.
+This is my personal clone of AI Dungeon with the purpose of getting it out of the dungeon and into more interesting realms of fantasy that are not as high.
 
 Read more about AIDungeon2 and how it was built [here](https://pcc.cs.byu.edu/2019/11/21/ai-dungeon-2-creating-infinitely-generated-text-adventures-with-deep-learning-language-models/).
 
