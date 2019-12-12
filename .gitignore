@@ -9,3 +9,4 @@ data/stories/
 /generator/gpt2/checkpoint/
 /story*.json
 text_adventures.txt
+.DS_Store
